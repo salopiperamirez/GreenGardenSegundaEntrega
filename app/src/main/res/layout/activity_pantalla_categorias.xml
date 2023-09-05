@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PantallaCategorias">
+
+    <Button
+        android:id="@+id/botonPantallaAgua"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="159dp"
+        android:layout_marginEnd="161dp"
+        android:backgroundTint="#35BCC8"
+        android:text="Consumo De Agua"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:cornerRadius="0sp"
+        app:layout_constraintBottom_toTopOf="@+id/botonPantallaAbono"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.71" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="104dp"
+        android:layout_marginEnd="104dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="CATEGORÍAS"
+        android:textColor="#000000"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/botonPantallaAgua"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView15"
+        app:layout_constraintVertical_bias="0.121" />
+
+    <Button
+        android:id="@+id/botonPantallaAbono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="600dp"
+        android:layout_marginEnd="176dp"
+        android:backgroundTint="#5CB074"
+        android:text="Consumo De Abono"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:cornerRadius="0sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.345"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="403dp"
+        android:layout_height="155dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.099"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.028"
+        app:srcCompat="@drawable/logo" />
+
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="148dp"
+        android:layout_height="135dp"
+        app:layout_constraintBottom_toTopOf="@+id/botonPantallaAgua"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/agua" />
+
+    <ImageView
+        android:id="@+id/imageView20"
+        android:layout_width="151dp"
+        android:layout_height="138dp"
+        app:layout_constraintBottom_toTopOf="@+id/botonPantallaAbono"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/botonPantallaAgua"
+        app:srcCompat="@drawable/consumoabono" />
+
+    <Button
+        android:id="@+id/btnRegresarCategorias"
+        android:layout_width="336dp"
+        android:layout_height="48dp"
+        android:autoSizeTextType="uniform"
+        android:backgroundTint="#5CB074"
+        android:text="REGRESAR"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/botonPantallaAbono" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
